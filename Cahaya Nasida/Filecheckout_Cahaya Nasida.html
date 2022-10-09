@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 2</title>
+
+    <!-- css -->
+    <style>
+        #all {
+            width: 70%;
+            height: 70%;
+            padding: 10px;
+            margin: auto;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Tahoma';
+        }
+
+        li a:hover:not(.active) {
+            color: #212121
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .five {
+            width: 50%;
+            float: left;
+            padding: 40px;
+        }
+
+        .six {
+            width: 50%;
+            float: left;
+            padding: 40px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table thead th {
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+
+        table tfoot td {
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+
+        img {
+            padding: 10px;
+            width: 30%;
+            vertical-align: middle;
+        }
+
+        .select {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .select .opt {
+            width: 30%;
+        }
+
+        tfoot {
+            text-align: right;
+        }
+
+        #card {
+            padding: 20px;
+            background-color: lightgrey;
+            margin: 20px auto;
+        }
+
+        .text-card {
+            padding: 0;
+        }
+
+        .text-card .text-left {
+            float: left
+        }
+
+        .text-card .text-right {
+            float: right;
+        }
+
+        .btn-checkout {
+            padding: 15px;
+            width: 100%;
+            background-color: blue;
+            font-size: 25px;
+            color: white;
+            border: 3px solid black;
+        }
+
+        .btn-checkout:hover {
+            background-color: grey;
+        }
+
+        footer {
+            position: static;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: lightgrey;
+            font-size: 18px;
+        }
+
+        .method-payment {
+            padding: 5px;
+        }
+
+        .method-payment i {
+            margin-right: 10px;
+        }
+
+        .input-email {
+            width: 75%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .btn-subscribe {
+            padding: 10px;
+            margin-left: -10px;
+            background-color: rgb(73, 69, 69);
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <form method="POST" action="http://cahayanasida.com/cahayanasida.php">
+        <div id="all">
+            <!-- navbar -->
+            <nav style="background-color: #D3D3D3;">
+                <h1 style="padding: 10px; float: left;">
+                    <a style="font-size: 20px;" href="#"> <i class="fas fa-store fa-lg"></i> &nbsp; cahayanasida </a>
+                </h1>
+                <ul style="list-style-type: none; margin: 0; padding: 22px; overflow: hidden;">
+                    <li style="border-right: 1px solid; float: left; padding: 15px;">
+                        <a style="font-size: 20px;" href="#"> Category 1 </a>
+                    </li>
+                    <li style="border-right: 1px solid; float: left; padding: 15px;">
+                        <a style="font-size: 20px;" href="#"> Category 2 </a>
+                    </li>
+                    <li style="float: left; padding: 15px;">
+                        <a style="font-size: 20px;" href="#"> Category 3 </a>
+                    </li>
+                    <li style="float: right; padding: 15px; margin-left: -5px;">
+                        <a style="font-size: 20px;" href="#"> <i class="fas fa-shopping-cart"></i> Cart (1) </a>
+                    </li>
+                    <li style="float: right; padding: 15px; margin-left: -5px;">
+                        <a style="font-size: 20px;" href="#"> <i class="fas fa-search"></i> </a>
+                    </li>
+                </ul>
+            </nav>
+            <div style="clear: both;"></div>
+            <!-- table cart -->
+            <article class="six">
+                <table>
+                    <tr>
+                        <td>
+                            <small>Order 131217312</small>
+                            <h3>Thank You, cahayanasida!</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding: 20px 0;">
+                            <p style="font-weight: 600;">Your order is confirmed.</p>
+                            <p>We've accepted your order and we're getting it ready.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border: none; padding: 10px 0;">
+                            <h3>Customer Information</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: none; padding: 10px 0;">
+                            <p><b>Shipping Address</b></p>
+                            <p><b>cahayanasida</b><br>
+                                12 Waldo Point Road Mishauken, NY 11200<br>
+                                United State</p>
+                        </td>
+                        <td style="border: none; padding: 10px 0;">
+                            <p><b>Billing Address</b></p>
+                            <p><b>cahayanasida</b><br>
+                                12 Waldo Point Road Mishauken, NY 11200 United State</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0 20px;">
+                            <p><b>Shipping Methode</b><br>
+                                UPS Ground (Estimated ship time 3 - 7 days)</p>
+                        </td>
+                        <td style="padding: 10px 0 20px;">
+                            <p><b>Payment Methode</b><br>
+                                Ending in 3217 - Rp700.000
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <!-- bill -->
+            <section id="card" class="five">
+
+                <header>
+                    <h3>Summary (1 Item)</h3>
+                </header>
+                <div class="text-card">
+                    <p class="text-left">
+                        Subtotal
+                    </p>
+                    <p class="text-right">
+                        $70.00
+                    </p>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="text-card">
+                    <p class="text-left">
+                        Shipping
+                    </p>
+                    <p class="text-right">
+                        $2.20
+                    </p>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="text-card">
+                    <p class="text-left">
+                        Est. Taxes
+                    </p>
+                    <p class="text-right">
+                        $1.40
+                    </p>
+                    <div style="clear: both;"></div>
+                    <label for="code">Get card or discount code</label>
+                    <br>
+                    <input type="text" name="code" id="code" size="30">
+                    <input type="submit" value="Apply">
+                </div>
+                <hr>
+                <div class="text-card">
+                    <p class="text-left">
+                        Total
+                    </p>
+                    <p class="text-right">
+                        $73.60
+                    </p>
+                    <div style="clear: both;"></div>
+                </div>
+            </section>
+            <div style="clear: both;"></div>
+            <!-- footer -->
+            <footer>
+                <div style="float:left;">
+                    <h4 style="float: left;">
+                        <a href="#">cahayanasida</a>
+                    </h4>
+                    <ul style="list-style-type: none; margin: 0; padding: 10px; overflow: hidden;">
+                        <li style="border-right: 1px solid; float: left; padding: 15px;">
+                            <a href="#"> Category 1 </a>
+                        </li>
+                        <li style="border-right: 1px solid; float: left; padding: 15px;">
+                            <a href="#"> Category 2 </a>
+                        </li>
+                        <li style="float: left; padding: 15px;">
+                            <a href="#"> Category 3 </a>
+                        </li>
+                    </ul>
+                    <div class="method-payment">
+                        <i class="fab fa-cc-visa fa-2x"></i>
+                        <i class="fab fa-cc-mastercard fa-2x"></i>
+                        <i class="fab fa-cc-paypal fa-2x"></i>
+                    </div>
+                </div>
+                <div style="float:right;">
+                    <h4>
+                        Stay in Touch! Join our Newsletter.
+                    </h4>
+                    <input type="text" name="email" id="email" placeholder="Enter Email" class="input-email">
+                    <button class="btn-subscribe">Subscribe</button>
+                </div>
+
+
+                <div style="clear: both;"></div>
+            </footer>
+        </div>
+    </form>
+</body>
+
+</html>
