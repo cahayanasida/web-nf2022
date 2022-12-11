@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: rgb(41, 207, 7);
+    float: left;
+    margin-left: 1.5em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
